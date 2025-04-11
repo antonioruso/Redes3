@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo OSI</title>
+</head>
+<body>
+    <center><h1 style="color: red;">¿Que es el modelo OSI?</h1></center>
+    <p><h4 style="color: black;">El modelo Open Systems Interconnection (OSI) es un modelo conceptual creado por la Organización Internacional para la Estandarización, el cual permite que diversos sistemas de comunicación se conecten usando protocolos estándar. En otras palabras, el OSI proporciona un estándar para que distintos sistemas de equipos puedan comunicarse entre sí.
+ modelo OSI se puede ver como un lenguaje universal para la conexión de las redes de equipos. Se basa en el concepto de dividir un sistema de comunicación en siete capas abstractas, cada una apilada sobre la anterior.</h4></p>
+
+ <a href="index.html">Regresar a la pagina anterior</a>
+ <center><h2 style="color: blue;">Capas de el modelo OSI</h2></center>
+
+ <table width="60%" align="center" border="5">
+    <tr>
+      <td><img src="images/998.png" alt="Radio" height="100"></td>
+      <td><strong>Capa de aplicacion (Capa 7):</strong>La capa 7 es la capa con la que está familiarizada la mayoría de la gente, porque es la que se comunica directamente con el usuario. Una aplicación que se ejecuta en un dispositivo puede comunicarse con otras capas OSI, pero la interfaz se ejecuta en la capa 7. Por ejemplo, un cliente de correo electrónico que transfiere mensajes entre un cliente y un servidor se ejecuta en la capa 7. Cuando se recibe un mensaje en el software del cliente, la capa de aplicación es lo que lo presenta al usuario. Los protocolos de aplicación incluyen el SMTP (Simple Mail Transfer Protocol) y el HTTP, que es el protocolo para la comunicación entre navegadores y servidores web.</td>
+    </tr>
+    <tr>
+      <td><img src="images/capa6.jpg" alt="WiFi" height="100"></td>
+      <td><strong>Capa de Presentacion (Capa 6):</strong> Mencionamos que la capa de aplicación muestra información a los usuarios, pero la capa de presentación del modelo OSI es la que prepara los datos para que estos puedan mostrarse al usuario. Es muy común que dos aplicaciones diferentes usen la codificación. Por ejemplo, comunicarse con un servidor web sobre HTTPS que usa información cifrada. La capa de presentación es la responsable de la codificación y descodificación de la información, de modo de que puede mostrarse en texto simple. La capa de presentación también es responsable de la compresión y descompresión de los datos, a medida que estos viajan de un dispositivo a otro.</td>
+    </tr>
+    <tr>
+      <td><img src="images/capa5.jpg" alt="Microondas" height="100"></td>
+      <td><strong>Capa de Sesion (Capa 5):</strong> Para comunicarse entre dos dispositivos, una aplicación debe antes crear una sesión. Una sesión es única para el usuario y lo identifica en el servidor remoto. La sesión debe abrirse durante el tiempo suficiente como para que los datos se transfieran, pero debe cerrarse después de la transferencia. Cuando se transfieren grandes volúmenes de datos, la sesión es la que se encarga de garantizar que el archivo se transfiera en su totalidad, y de que la retransmisión se restablezca si los datos están incompletos. Por ejemplo, si se transfieren 10 MB de datos y solo se completan 5 MB, la capa de sesión se asegura de que solo se retransfieran 5 MB. Esta transferencia hace que la comunicación sobre una red sea más eficiente, en vez de desperdiciar recursos y transferir el archivo entero de nuevo.</td>
+    </tr>
+    <tr>
+      <td><img src="images/capa4.jpg" alt="Bluetooth" height="100"></td>
+      <td><strong>Capa de Transporte:</strong>La capa de transporte se encarga de tomar los datos y dividirlos en partes más pequeñas. Cuando se transfieren datos en una red, no se transfieren en un paquete único. Para hacer las transferencias más eficientes y rápidas, la capa de transporte divide los datos en segmentos más pequeños. Estos segmentos más pequeños contienen información de encabezado que se pueden volver a ensamblar en el dispositivo objetivo. Los datos segmentados también cuentan con control de errores para informar a la capa de transporte que restablezca la conexión si los paquetes no se transfieren totalmente al destinatario objetivo.</td>
+    </tr>
+    <tr>
+      <td><img src="images/capa3.jpg" alt="5G" height="100"></td>
+      <td><strong>Capa de Red (Capa 3):</strong> La capa de red es la que se encarga de dividir los datos en el dispositivo del remitente y de recomponerlos en el dispositivo del destinatario cuando la transmisión ocurre entre dos redes diferentes. Al comunicarse dentro de la misma red, la capa de red es innecesaria, pero la mayoría de los usuarios se conectan a otras redes, como las redes basadas en la nube. Cuando los datos viajan a través de diferentes redes, la capa de red es la responsable de crear pequeños paquetes de datos que se redirigen a sus destinos y después se reconstruyen en el dispositivo del destinatario.</td>
+    </tr>
+    <tr>
+      <td><img src="images/capa2.jpg" alt="Infrarrojo" height="100"></td>
+      <td><strong>Capa Enlace de datos (Capa 2):</strong> La capa de red posibilita la comunicación entre diferentes redes, pero la capa de enlace de datos es la responsable de la transferencia de información en la misma red. El enlace de datos convierte los paquetes recibidos en la capa de red en marcos. Al igual que la capa de red, la capa de enlace de datos es la responsable del control de los errores y el flujo de datos para garantizar una correcta transmisión.</td>
+    </tr>
+    <td><img src="images/capa1.png" alt="Infrarrojo" height="100"></td>
+    <td><strong>Capa Fisica (Capa 1):</strong> Tal como su nombre sugiere, la capa física es la responsable de los equipos físicos y la que posibilita la transferencia de datos, como cables y routers instalados en la red. Esta capa es uno de los aspectos en la transmisión de red en donde los estándares son fundamentales. Sin estándares, la transmisión entre dispositivos de diversos fabricantes es imposible.
+    </td></table>    
+  </table>
+
+<center><h2 style="color:green;">Protocolos de las capas OSI</h3></center>
+<center><table border="2" 
+<tr>
+  <th>Capas del Modelo OSI</th>
+  <th>Protocolos de cada una</th>
+  <th>Descripcion</th>
+  </tr>
+  <tr>
+    <td>Capa de aplicacion (Capa 7)</td>
+    <td>HTTPS,FTP,SMTP,DNS,SNMP</td>
+    <td>
+      <li>HTTPS:Protocolo para la navegación web (seguro en el caso de HTTPS)</li>
+      <li>FTP:ermite la transferencia de archivos entre cliente y servidor.</li>
+      <li>SMTP:Envío de correos electrónicos entre servidores</li>
+      <LI>DNS:Traduce nombres de dominio en direcciones IP</LI>
+      <li>SNMP:Supervisión y gestión de dispositivos de red.</li>
+    </td>
+  </tr>
+  <tr>
+    <td>Capa de presentacion (Capa 6)</td>
+    <td>TLS,JPEG,MP3,MIME,ASCII</td>
+    <td>
+      <li>TLS:Cifra los datos para conexiones seguras (usado en HTTPS)</li>
+      <li>JPEG:Formato comprimido para imágenes.</li>
+      <li>MP3:Compresión de archivos de audio.</li>
+      <LI>MIME:Permite enviar archivos multimedia por correo electrónico.</LI>
+      <li>ASCII: Representación de caracteres en texto plano.</li>
+    </td>
+  </tr>
+  <tr>
+    <td>Capa de sesion (Capa 5)</td>
+    <td>NetBIOS,RPC,PPTP,Sockets</td>
+    <td>
+      <li>NetBIOS:Comunicación entre aplicaciones en redes locales.</li>
+      <li>RPC: Ejecuta funciones en dispositivos remotos.</li>
+      <li>PPTP:Protocolo para túneles VPN.</li>
+      <LI>Sockets:TPunto de conexión para transmitir datos entre procesos.</LI>
+    </td>
+  </tr>
+    <tr>
+      <td>Capa de transporte (Capa 4)</td>
+      <td>TCP,UDP.SCTP</td>
+      <td>
+      <li>TCP: Conexión fiable, asegura entrega y orden de los datos.</li>
+      <li>UDP:Envío rápido sin verificación (usado en streaming).</li>
+      <li>SCTP:Combina fiabilidad de TCP con eficiencia de UDP.</li
+      </td>
+    </tr>
+    <tr>
+      <td>Capa de Red(Capa 3)</td>
+      <td>IP,ICMP,IGMP,ARP,OSPF,BGP,RIP</td>
+      <td>
+      <li>IP:Direccionamiento y enrutamiento de paquetes.</li>
+      <li>ICMP: Mensajes de error (ej. ping).</li>
+      <LI>IGMP:Gestión de grupos multicast.</LI>
+      <li>ARP:raduce IP a dirección MAC..</li>
+      <li>OSPF:Enrutamiento interno eficiente.</li>
+      <li>BGP:Enrutamiento entre redes grandes (Internet).</li>
+      <li>RIP: Enrutamiento simple por número de saltos.</li>
+      </td>
+    </tr>
+    <tr>
+      <td>Capa de Enlace (Capa2)</td>
+      <td>Ethernet,PPP,HDLC,MAC,Frame relay</td>
+      <td>
+        <li>Ethernet:Tecnología de red LAN más común.</li>
+        <li>PPP:Conexión directa entre dos nodos.</li>
+        <li>HDLC:Protocolo para enlaces confiables.</li>
+        <li>MAC:Dirección física única por dispositivo.</li>
+        <li>Frame Relay: Transmisión eficiente en redes WAN.</li>
+      </td>
+    </tr>
+    <tr>
+      <td>Capa Fisica(Capa1)</td>
+      <td>USB,RS-232,WIFI,Bluetooth,Fibra Optica</td>
+      <td>
+        <li>USB:Interfaz de conexión para periféricos.</li>
+        <li>RS-232:Comunicación serie (equipos antiguos).</li>
+        <li>Bluetooth:Conexión inalámbrica de corto alcance.</li>
+        <li>WIFI:Red inalámbrica por radiofrecuencia.</li>
+        <li>Fibra Optica:ransmisión de datos por pulsos de luz</li>
+      </td>
+    </tr>
+    </center>
+    <footer style="text-align: center;">
+        <p>Elaborado por <a href="https://github.com/antonioruso" target="_blank">Antonio</a></p>
+    </footer>
+    <table width="100%" height="100%">
+      <tr>
+        <td valign="bottom" align="right">
+          <footer>
+           <h5>antoniorojero®</h5>
+          </footer>
+        </td>
+      </tr>
+    </table>
+     
+    <iframe width="500" height="305" src="https://www.youtube.com/embed/O8SeYEFnBmQ?si=mzyjhUDCjHo2vBQ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+     
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Antonio Rojero</title>
+</head>
+<body background="image/wal.jpg">
+
+  <h1 align="center">Redes de Computadoras</h1>
+
+  <ul>
+    <li><a href="#defi">Definición de Redes</a></li>
+    <li><a href="#tipos">Tipos de Redes</a></li>
+    <li><a href="#topos">Topologías de Redes</a></li>
+    <li><a href="#medios">Medios de Transmisión</a></li>
+    <li><a href="interc.html">Dispositivos de Interconexion</a></li>
+    <li><a href="osi.html">Modelo OSI</a></li>
+  </ul>
+
+  <p>Respondamos algunas preguntas frecuentes comunes sobre la red de ordenadores.</p>
+
+  <h2 style="color:indianred;"><strong>Tipos de redes</strong></h2>
+
+  <table width="80%" border="5" align="center">
+    <tr><td><strong>Red de Área Personal (PAN):</strong> Conecta dispositivos cerca de una persona, como un teléfono y un portátil.</td></tr>
+    <tr><td><strong>Red de Área Local (LAN):</strong> Conecta dispositivos en un área pequeña, como una oficina o un edificio.</td></tr>
+    <tr><td><strong>Red de Área Metropolitana (MAN):</strong> Conecta dispositivos en una ciudad o área metropolitana.</td></tr>
+    <tr><td><strong>Red de Área Amplia (WAN):</strong> Conecta dispositivos en un área geográfica grande, como un país o el mundo.</td></tr>
+    <tr><td><strong>Red de Área de Almacenamiento (SAN):</strong> Conecta dispositivos de almacenamiento de datos.</td></tr>
+  </table>
+
+  <a name="defi"></a>
+  <h2>¿Qué es una red de ordenadores?</h2>
+  <p align="justify">
+    Una red de ordenadores se refiere a dispositivos de computación interconectados que pueden intercambiar datos y compartir recursos entre sí. Los dispositivos de la red utilizan un sistema de reglas, llamados protocolos de comunicaciones, para transmitir información a través de tecnologías físicas o inalámbricas.
+  </p>
+
+  <a name="topos"></a>
+  <h2 align="center" style="color:yellowgreen;">Topologías de redes</h2>
+
+  <table width="60%" align="center" border="4">
+    <tr>
+      <td><img src="images/star.png" alt="Bus" height="100"></td>
+      <td><strong>Topología de bus:</strong> Todos los dispositivos están conectados a un único cable central.</td>
+    </tr>
+    <tr>
+      <td><img src="images/estrella.png" alt="Estrella" height="100"></td>
+      <td><strong>Topología de estrella:</strong> Todos los dispositivos se conectan a un nodo central como un switch o hub.</td>
+    </tr>
+    <tr>
+      <td><img src="images/anillo.jpg" alt="Anillo" height="100"></td>
+      <td><strong>Topología de anillo:</strong> Los dispositivos forman un círculo cerrado.</td>
+    </tr>
+    <tr>
+      <td><img src="images/malla.png" alt="Malla" height="100"></td>
+      <td><strong>Topología de malla:</strong> Todos los nodos están interconectados entre sí.</td>
+    </tr>
+    <tr>
+      <td><img src="images/hi.png" alt="Híbrida" height="100"></td>
+      <td><strong>Topología híbrida:</strong> Combinación de dos o más topologías.</td>
+    </tr>
+    <tr>
+      <td><img src="images/xd.jpg" alt="Punto a punto" height="100"></td>
+      <td><strong>Topología punto a punto:</strong> Conexión directa entre dos nodos.</td>
+    </tr>
+  </table>
+
+  <a name="medios"></a>
+  <h2 align="center" style="color:blue;">Medios de transmisión alámbricos</h2>
+
+  <table width="60%" align="center" border="5">
+    <tr>
+      <td><img src="images/coaxial.jpg" alt="Coaxial" height="100"></td>
+      <td>
+        <strong>Cable Coaxial:</strong> Conductor central rodeado por aislamiento y blindaje.<br>
+        <strong style="color:red;">Cable coaxial RF:</strong> Usado para transportar señales de radiofrecuencia.<br>
+        <strong style="color:darkred;">Cable coaxial RG6:</strong> Mejor calidad de señal y flexible para instalaciones.
+      </td>
+    </tr>
+    <tr>
+      <td><img src="images/penes.jpg" alt="Fibra" height="100"></td>
+      <td>
+        <strong>Fibra Óptica:</strong> Usa hilos de vidrio para transmitir señales de luz.<br>
+        <strong style="color:red;">Monomodo:</strong> Transmisiones largas y alta velocidad.<br>
+        <strong style="color:blue;">Multimodo:</strong> Transmisión corta con varios modos de luz.
+      </td>
+    </tr>
+    <tr>
+      <td><img src="images/cable3.png" alt="PLC" height="100"></td>
+      <td><strong>Cable de alimentación eléctrica:</strong> Utiliza la red eléctrica para transmitir datos (PLC).</td>
+    </tr>
+    <tr>
+      <td><img src="images/aunte.jpg" alt="STP" height="100"></td>
+      <td><strong>Par trenzado apantallado (STP):</strong> Mayor protección contra interferencias. Usado en Ethernet.</td>
+    </tr>
+  </table>
+
+  <a name="tipos"></a>
+  <h2 align="center" style="color:red;">Medios de transmisión inalámbricos</h2>
+
+  <table width="60%" align="center" border="5">
+    <tr>
+      <td><img src="images/victor.png" alt="Radio" height="100"></td>
+      <td><strong>Radio:</strong> Comunicación a larga distancia mediante ondas electromagnéticas.</td>
+    </tr>
+    <tr>
+      <td><img src="images/wizy.jpg" alt="WiFi" height="100"></td>
+      <td><strong>WiFi:</strong> Redes inalámbricas que permiten conectar dispositivos sin cables. <a href="wifi.html">Leer más sobre WiFi</a></td>
+    </tr>
+    <tr>
+      <td><img src="images/micro.jpg" alt="Microondas" height="100"></td>
+      <td><strong>Microondas:</strong> Comunicación a gran distancia, usada en satélites y enlaces de telecomunicaciones.</td>
+    </tr>
+    <tr>
+      <td><img src="images/losbo.jpg" alt="Bluetooth" height="100"></td>
+      <td><strong>Bluetooth:</strong> Comunicación de corto alcance entre dispositivos electrónicos.</td>
+    </tr>
+    <tr>
+      <td><img src="images/telcel.jpg" alt="5G" height="100"></td>
+      <td><strong>Infraestructura Celular (4G/5G):</strong> Redes móviles de alta velocidad y baja latencia.</td>
+    </tr>
+    <tr>
+      <td><img src="images/pesopluma.png" alt="Infrarrojo" height="100"></td>
+      <td><strong>Infrarrojo:</strong> Transmisión por pulsos de luz entre dispositivos cercanos.</td>
+    </tr>
+  </table>
+  <br>><center><iframe width="440" height="400" src="https://www.youtube.com/embed/-QTNJws7PRg?si=moa6_Xx8cIYAqQC1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></center>
+
+  <table width="100%" height="100%">
+    <tr>
+      <td valign="bottom" align="right">
+        <footer>
+          <h6>Elaborado por <a href="https://sites.google.com/view/antoniorojero/home" target="_blank">Antonio</a></h6>
+        </footer>
+      </td>
+    </tr>
+  </table>
+
+  <table width="100%" height="100%">
+    <tr>
+      <td valign="bottom" align="right">
+        <footer>
+         <h5>antoniorojero®</h5>
+        </footer>
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>
